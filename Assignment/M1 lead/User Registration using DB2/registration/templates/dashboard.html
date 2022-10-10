@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+    <div class="container border border-primary">
+        <div class="row d-flex justify-content-center align-items-center">
+            <h2>Your Details</h2>
+            <table class="table table-hover">
+                <th colspan="2">
+                    Welcome
+                </th>
+                <tr>
+                    <td>Email</td>
+                    <td>{{ account['EMAIL'] }}</td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td>{{ account['USERNAME'] }}</td>
+                </tr>
+                <tr>
+                    <td>Register Number</td>
+                    <td>{{ account['ROLLNO'] }}</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>{{ account['PASSWORD'] }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+{% endblock %}

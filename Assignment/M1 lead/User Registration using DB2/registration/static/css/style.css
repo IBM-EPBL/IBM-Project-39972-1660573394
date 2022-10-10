@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #212121;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+}
+
+nav > div{
+    padding: 20px 100px;
+}
+
+nav > div > h3{
+    text-align: center;
+}
+
+.main-div{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flash-div{
+    width: 100%;
+    height: 70px;
+    background-color: #f67c86;
+}
+
+.flash-div > h4{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.success{
+    background-color: rgb(88, 245, 88);
+}
+
+
+
