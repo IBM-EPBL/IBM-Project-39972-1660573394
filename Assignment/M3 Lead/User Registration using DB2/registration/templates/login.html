@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+    <div class="container border border-primary">
+        <div class="row d-flex justify-content-center align-items-center">
+            <h3>Login</h3>
+            <form method="POST">
+                <label>Email</label> <br>
+                <input class="form-control" type="text" placeholder="Enter your email" name="email"/>
+                
+                <label>Password</label> <br>
+                <input class="form-control" type="tex t" placeholder="Enter your password" name="password"/>
+            
+                <button class="btn btn-primary mt-3">Login</button>
+
+                <div>
+                    <a href="/register">Don't have an account? Create one</a>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

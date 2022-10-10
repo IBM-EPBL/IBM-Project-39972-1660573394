@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sign up
+{% endblock %}
+
+{% block main %}
+
+    <div class="container border border-primary">
+        <div class="row d-flex justify-content-center align-items-center">
+            <h3>Enter all the details</h3>
+            <form method="POST">
+                <label>Email</label> <br>
+                <input class="form-control" type="text" placeholder="Enter your email" name="email"/>
+                
+                <label>Username</label> <br>
+                <input class="form-control" type="text" placeholder="Enter your username" name="username"/>
+
+                <label>Register Number</label> <br> 
+                <input class="form-control" type="number" placeholder="Enter your Registration Number" name="number"/>
+
+                <label>Password</label> <br>
+                <input class="form-control" type="password" placeholder="Enter your password" name="password"/>
+            
+                <input class="btn btn-primary mt-3 mb-3" type="submit"/>
+
+                <div>
+                    <a href="/">Already have an account? Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
