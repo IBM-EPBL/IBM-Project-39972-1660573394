@@ -1,0 +1,46 @@
+{% extends 'home/layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+
+<div class="form-group">
+<form method="GET" >
+<input type="text" id="search" name="query" placeholder="Search news by title" class="form-control" >
+<br/>
+<button type="submit" class="btn btn-primary">Search</button>
+</form>
+</div>
+
+<style>
+.img-fluid {
+  max-width: 350%;
+  height: auto;
+}
+</style>
+
+
+    {% for artcles in data.articles %}
+    <div class="row">
+    <div class="col-md-6">
+        <h3>{{ artcles.title }}</h3>
+        <div class="row">
+            
+            <div class="col-md-4">
+                <img src="{{ artcles.urlToImage }}" alt="" class="img-fluid">
+                <p>{{ artcles.description }}</p> - <a href="{{ artcles.url }}">Read More</a>
+                <p> By ~ {{ artcles.author }}</p>
+            </div>
+               
+                
+            
+        
+        </div>     
+    </div> 
+    </div>
+    {% endfor %}
+
+
+{% endblock %}
